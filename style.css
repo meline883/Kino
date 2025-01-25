@@ -1,0 +1,144 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333; }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 2px 2px;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    button {
+        background-color: #008000;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #006400;
+    }
+header {width:100%; 
+height: 650px;
+}
+
+
+.Gl2 {
+    width: 100%;
+    height:auto; 
+}
+
+
+nav {
+    background-color: #006400;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #006400;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.category {
+    background-color: #008000;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.product {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+#search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#search-query {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #008000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #006400;
+}
