@@ -1,0 +1,227 @@
+/* Light mode */
+.light-mode {
+    background-color: #ffffff;
+    color: #20232a;
+}
+
+.light-mode .menu-container {
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #61dafb;
+}
+
+.light-mode .menu-link {
+    color: #20232a;
+}
+
+.light-mode .menu-link:hover {
+    background-color: #61dafb;
+    color: #20232a;
+}
+
+.light-mode .search-input {
+    background-color: #ffffff;
+    color: #20232a;
+    border: 1px solid #61dafb;
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: #181818;
+    color: #ffffff;
+}
+
+.dark-mode .menu-container {
+    background-color: #20232a;
+    border-bottom: 2px solid #61dafb;
+}
+
+.dark-mode .menu-link {
+    color: #ffffff;
+}
+
+.dark-mode .menu-link:hover {
+    background-color: #61dafb;
+    color: #20232a;
+}
+
+.dark-mode .search-input {
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #61dafb;
+}
+
+/* Navbar-ի ընդհանուր ոճավորում */
+.menu-container {
+    background-color: #20232a; /* Մուգ մոխրագույն */
+    padding: 10px 20px;
+    border-bottom: 2px solid #61dafb; /* React գույն */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list li {
+    margin-right: 15px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-link:hover {
+    background-color: #61dafb; /* React գույն */
+    color: #20232a;
+}
+
+/* Հավելված որոնման բաժնի համար */
+.menu-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #61dafb;
+    border-radius: 4px;
+    outline: none;
+    color: #20232a;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #ffffff;
+}
+
+.search-button {
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #ffffff;
+    color: #20232a;
+}
+
+
+
+/* Theme Toggle Button */
+.theme-toggle {
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #61dafb;
+    color: #20232a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #ffffff;
+    color: #61dafb;
+    border: 1px solid #61dafb;
+}
+
+
+
+/* Base styles արդեն կան, ավելացնում ենք media queries */
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-list li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .menu-link {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu-search {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .search-input {
+        flex-grow: 1;
+        font-size: 16px;
+    }
+
+    .search-button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .theme-toggle {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        padding: 10px;
+    }
+
+    .menu-link {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .search-input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .search-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .theme-toggle {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

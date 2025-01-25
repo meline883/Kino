@@ -1,0 +1,45 @@
+/* Թրենդային ֆիլմեր */
+.trending {
+    margin-bottom: 30px;
+}
+
+.trending h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #61dafb;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.movie-card {
+    background-color: #282c34;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(25% - 20px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.movie-card p {
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+}

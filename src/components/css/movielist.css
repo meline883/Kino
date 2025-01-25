@@ -1,0 +1,48 @@
+/* Կենտրոնացնում ենք label-ը և select-ը */
+div {
+    margin-bottom: 20px;
+}
+
+/* Label-ը */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+/* Select ընտրացանկ */
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Select-ի ստեղնը անցնելիս */
+select:hover {
+    border-color: #007BFF;
+}
+
+/* Focus վրա select-ը */
+select:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Ընտրություն կատարելիս */
+option {
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Select-ի dropdown ստեղն */
+select::-ms-expand {
+    display: none;
+}

@@ -1,0 +1,29 @@
+.movie-slider {
+    padding: 40px;
+    text-align: center; /* Կենտրոնացնում է բովանդակությունը */
+}
+
+.movie-slider h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.movie {
+    position: relative;
+}
+
+.movie img {
+    width: 100%;
+    max-width: 800px; /* Մաքսիմալ լայնություն */
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Թեթև ստվեր */
+}
+
+.movie h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #555;
+}
